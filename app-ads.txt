@@ -1,0 +1,2 @@
+# Ganbaroot app-ads.txt
+# AdMob publisher line will be added after the AdMob account is created.
