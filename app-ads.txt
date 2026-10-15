@@ -1,2 +1,2 @@
-# Ganbaroot app-ads.txt
-# AdMob publisher line will be added after the AdMob account is created.
+# Ganbaroot app-ads.txt (Botpia)
+google.com, pub-9348754444001438, DIRECT, f08c47fec0942fa0
