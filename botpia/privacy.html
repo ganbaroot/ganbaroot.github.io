@@ -10,7 +10,7 @@
 <body>
 <main>
   <h1>Botpia 개인정보처리방침</h1>
-  <p class="muted">시행일: 2026년 10월 15일 · 개발자: Ganbaroot</p>
+  <p class="muted">시행일: 2026년 10월 16일 · 개발자: Ganbaroot</p>
   <nav class="lang"><a href="#ko">한국어</a><a href="#en">English</a></nav>
 
   <section id="ko">
@@ -24,7 +24,6 @@
     <tr><td>계정 식별자</td><td>익명 로그인 시 자동 발급되는 사용자 ID. Google 계정을 연결하면 Google 계정 식별자와 이메일 주소</td><td>게임 기록·프로필 저장, 기기 변경 시 복구</td></tr>
     <tr><td>프로필·게임 기록</td><td>닉네임, 아바타·칭호, 점수, 점수 검증용 게임 시드와 입력 기록, 플레이 일시</td><td>리더보드 운영, 점수 위변조 방지, 시즌 보상 지급</td></tr>
     <tr><td>광고 관련 정보</td><td>광고 ID(Android Advertising ID), 기기 정보, IP 주소, 대략적인 위치, 광고 상호작용 정보</td><td>광고 표시, 광고 성과 측정, 부정 클릭 방지(Google AdMob)</td></tr>
-    <tr><td>앱 사용·오류 정보</td><td>앱 사용 이벤트, 기기 모델, OS 버전, 오류(크래시) 기록</td><td>서비스 개선, 오류 수정(Firebase Analytics, Crashlytics)</td></tr>
     <tr><td>앱 무결성 정보</td><td>앱·기기 무결성 판정 결과</td><td>변조된 앱의 부정 이용 방지(Google Play Integrity)</td></tr>
   </table>
   </div>
@@ -34,7 +33,7 @@
   <p>앱은 다음 서비스를 이용하며, 각 서비스는 자체 개인정보처리방침에 따라 정보를 처리합니다. 이 과정에서 정보가 국외(미국 등 Google 서버 소재지)로 전송·저장될 수 있습니다.</p>
   <ul>
     <li>Google AdMob, User Messaging Platform — 광고 및 동의 관리</li>
-    <li>Google Firebase (Authentication, Firestore, Storage, Remote Config, Analytics, Crashlytics) — 계정, 데이터 저장, 설정, 분석, 오류 보고</li>
+    <li>Google Firebase (Authentication, Firestore, Cloud Functions, App Check) — 계정, 데이터 저장, 점수 검증, 변조 앱 차단</li>
     <li>Google Play 서비스 (Play Integrity API)</li>
   </ul>
   <p>Google의 정보 처리 방식: <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>, <a href="https://policies.google.com/technologies/partner-sites">Google 파트너 사이트에서의 데이터 사용</a>, <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호</a></p>
@@ -51,13 +50,13 @@
 
   <h2>5. 보유 기간과 파기</h2>
   <ul>
-    <li>계정·프로필·게임 기록: 계정 삭제를 요청할 때까지 보관하며, 요청 후 30일 이내에 파기합니다.</li>
+    <li>계정·프로필·게임 기록: 계정을 삭제할 때까지 보관합니다. 앱 안에서 삭제하면 즉시, 이메일로 요청하면 30일 이내에 파기합니다.</li>
     <li>마지막 이용 후 1년 동안 이용 기록이 없는 익명 계정은 삭제될 수 있습니다.</li>
-    <li>분석·오류·광고 정보: 각 제3자 서비스의 보관 정책을 따릅니다.</li>
+    <li>광고 정보: Google AdMob의 보관 정책을 따릅니다.</li>
   </ul>
 
   <h2>6. 이용자의 권리와 계정 삭제</h2>
-  <p>이용자는 자신의 정보에 대해 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 앱 안의 계정 삭제 기능을 쓰거나, 앱에서 확인할 수 있는 사용자 ID를 적어 아래 이메일로 요청하면 지체 없이 처리합니다. 앱을 삭제해도 서버에 저장된 정보는 자동으로 지워지지 않으니 삭제를 원하면 요청해 주세요.</p>
+  <p>이용자는 자신의 정보에 대해 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 앱의 <strong>설정 → 계정 → 계정 삭제</strong>로 바로 지우거나, 사용자 ID(앱의 설정에서 확인)나 닉네임을 적어 아래 이메일로 요청할 수 있습니다. 자세한 방법은 <a href="delete-account.html">계정 삭제 안내</a>를 참고하세요. 앱을 삭제해도 서버에 저장된 정보는 자동으로 지워지지 않으니 삭제를 원하면 요청해 주세요.</p>
 
   <h2>7. 아동의 개인정보</h2>
   <p>앱은 만 13세 미만 아동을 대상으로 하지 않으며, 개발자는 만 14세 미만 아동의 개인정보를 알면서 수집하지 않습니다. 그런 정보가 수집된 사실을 알게 되면 즉시 삭제합니다.</p>
@@ -77,7 +76,7 @@
 
   <section id="en" lang="en">
   <h1>Botpia Privacy Policy</h1>
-  <p class="muted">Effective date: October 15, 2026 · Developer: Ganbaroot</p>
+  <p class="muted">Effective date: October 16, 2026 · Developer: Ganbaroot</p>
   <p>This policy explains how Ganbaroot (“we”) collects and uses information in the Android app <strong>Botpia</strong> (the “App”).</p>
 
   <h2>1. Information we collect</h2>
@@ -86,13 +85,12 @@
     <li><strong>Account identifiers</strong>: an anonymous user ID created automatically; if you link a Google account, its identifier and email address. Used to save and restore your progress.</li>
     <li><strong>Profile and game records</strong>: nickname, avatar and titles, scores, the game seed and input log used to verify scores, and play time. Used for leaderboards, anti-cheat and season rewards.</li>
     <li><strong>Advertising data</strong>: Android Advertising ID, device information, IP address, approximate location and ad interactions, processed by Google AdMob to serve and measure ads and prevent fraud.</li>
-    <li><strong>Usage and diagnostics</strong>: app events, device model, OS version and crash logs (Firebase Analytics, Crashlytics), used to improve the App.</li>
     <li><strong>App integrity</strong>: integrity verdicts from Google Play Integrity, used to prevent abuse by modified apps.</li>
   </ul>
   <p>Some settings and best scores are stored only on your device.</p>
 
   <h2>2. Third-party services</h2>
-  <p>We use Google AdMob and the User Messaging Platform, Google Firebase (Authentication, Firestore, Storage, Remote Config, Analytics, Crashlytics) and Google Play services. Data may be transferred to and stored on Google servers outside your country, including the United States. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from partner sites</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>. We do not sell your personal information.</p>
+  <p>We use Google AdMob and the User Messaging Platform, Google Firebase (Authentication, Firestore, Cloud Functions, App Check) and Google Play services (Play Integrity). Data may be transferred to and stored on Google servers outside your country, including the United States. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from partner sites</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>. We do not sell your personal information.</p>
 
   <h2>3. Ads and consent</h2>
   <p>Where required by law (for example in the EEA, the UK and Switzerland), a consent form is shown on first launch and can be changed later in the App settings. You can reset or delete your Advertising ID in Android <strong>Settings → Privacy → Ads</strong>.</p>
@@ -101,10 +99,10 @@
   <p>Your nickname, avatar, titles and scores are visible to other players on leaderboards. Do not use your real name or other identifying information as a nickname.</p>
 
   <h2>5. Retention</h2>
-  <p>Account, profile and game records are kept until you request deletion and are deleted within 30 days of the request. Anonymous accounts inactive for one year may be deleted. Analytics, diagnostics and advertising data follow the retention policies of the services above.</p>
+  <p>Account, profile and game records are kept until you delete your account. Deletion in the app is immediate; requests by email are completed within 30 days. Anonymous accounts inactive for one year may be deleted. Advertising data follows Google AdMob's retention policies.</p>
 
   <h2>6. Your rights and account deletion</h2>
-  <p>You may request access to, correction of, or deletion of your data. Use the in-app account deletion option, or email us with the user ID shown in the App. Uninstalling the App does not delete data stored on our servers.</p>
+  <p>You may request access to, correction of, or deletion of your data. Use <strong>Settings → Account → Delete account</strong> in the App, or email us with your user ID (shown in Settings) or nickname. See <a href="delete-account.html#en">how to delete your account</a>. Uninstalling the App does not delete data stored on our servers.</p>
 
   <h2>7. Children</h2>
   <p>The App is not directed to children under 13, and we do not knowingly collect personal information from them. If we learn that we have, we will delete it.</p>
