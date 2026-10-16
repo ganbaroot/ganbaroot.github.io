@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botpia (봇피아)</title>
+<meta name="description" content="봇피아: AI를 이겨라 — 수만 판을 연습한 AI 봇과 같은 판에서 겨루는 아케이드 게임">
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .hero { display: flex; gap: 20px; align-items: center; }
+  .hero img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+  .hero h1 { margin: 0 0 4px; }
+  .shots { display: flex; gap: 12px; overflow-x: auto; padding: 4px 0 12px; scroll-snap-type: x mandatory; }
+  .shots img { width: 180px; height: auto; aspect-ratio: 9 / 16; border-radius: 12px; border: 1px solid var(--line); flex: none; scroll-snap-align: start; }
+  ul.plain { padding-left: 1.2em; }
+  @media (max-width: 480px) {
+    .hero { gap: 14px; }
+    .hero img { width: 72px; height: 72px; border-radius: 16px; }
+    .shots img { width: 150px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="img/icon.png" alt="봇피아 앱 아이콘">
+    <div>
+      <h1>봇피아: AI를 이겨라</h1>
+      <p class="muted" style="margin:0">AI 봇들이 사는 도시. 이길 수 있겠어?</p>
+    </div>
+  </div>
+  <nav class="lang"><a href="#ko">한국어</a><a href="#en">English</a></nav>
+
+  <div class="shots" aria-label="게임 화면">
+    <img src="img/01_home.png" alt="홈 화면: 봇피아 도시와 구역" loading="lazy">
+    <img src="img/02_snake_watch.png" alt="스네이크 구역에서 AI 플레이 관전" loading="lazy">
+    <img src="img/03_merge_watch.png" alt="숫자 합치기 구역에서 AI 플레이 관전" loading="lazy">
+    <img src="img/04_leaderboard.png" alt="사람과 AI가 함께 있는 리더보드" loading="lazy">
+  </div>
+
+  <section id="ko">
+  <p>봇피아의 구역마다 수만 판을 혼자 연습하며 실력을 키운 AI 봇이 살고 있어요. 같은 판, 같은 규칙에서 AI와 점수로 겨루고, 이길 때마다 한 단계 더 강한 봇이 기다립니다.</p>
+
+  <h2>AI와 같은 판에서 겨루기</h2>
+  <ul class="plain">
+    <li>'AI에 도전'을 고르면 AI와 똑같은 판에서 플레이해요. 운이 아니라 실력으로 비교됩니다.</li>
+    <li>'AI 관전'으로 AI가 같은 판을 어떻게 푸는지 직접 볼 수 있어요.</li>
+  </ul>
+
+  <h2>4개 구역, 4가지 게임</h2>
+  <ul class="plain">
+    <li><strong>스네이크</strong> — 먹고, 길어지고, 갇히지 마세요.</li>
+    <li><strong>숫자 합치기</strong> — 같은 수를 밀어 합쳐 더 큰 수를 만드세요.</li>
+    <li><strong>탭 점프</strong> — 화면을 탭해 빌딩 틈 사이로 날아오르세요.</li>
+    <li><strong>블록 퍼즐</strong> — 블록을 놓아 줄을 채우고 터뜨리세요.</li>
+  </ul>
+  <p>구역마다 루키 → 브론즈 → 실버 → 골드 → 다이아 → 마스터, 6단계의 봇이 있어요. 24단계를 모두 이기면 도시 정복 완료.</p>
+
+  <h2>매일 새로운 도전, 같은 순위표</h2>
+  <ul class="plain">
+    <li>오늘의 도전은 모든 사람이 같은 판으로 겨뤄요. 매일 참여하면 연속 기록이 쌓여요.</li>
+    <li>리더보드에 사람과 단계별 AI가 함께 올라가요. 순위전 점수는 서버가 판 기록을 다시 계산해 확인해요.</li>
+    <li>시즌마다 구역별 상위 10명에게 칭호를 드려요.</li>
+  </ul>
+  <p class="muted">Android 전용 · 가입 없이 바로 시작 · 순위와 오늘의 도전은 인터넷 연결 필요 · 광고 포함</p>
+  </section>
+
+  <section id="en">
+  <h2>English</h2>
+  <p>Botpia is a city run by AI bots. Every district has an AI bot that practiced tens of thousands of rounds on its own. Play the same board under the same rules, compare scores, and each win unlocks a stronger bot.</p>
+  <p>Four games — Snake, Number Merge, Tap Jump and Block Puzzle — each with six tiers from Rookie to Master. A Daily Challenge where everyone plays the same board, and leaderboards where players and AI tiers rank together.</p>
+  <p class="muted">Android only · The app is currently in Korean · Contains ads</p>
+  </section>
+
+  <h2>정보 · Info</h2>
+  <p>
+    <a href="privacy.html">개인정보처리방침 · Privacy Policy</a><br>
+    <a href="delete-account.html">계정 삭제 · Delete account</a><br>
+    문의 · Contact: <a href="mailto:ganbarootstudio@gmail.com">ganbarootstudio@gmail.com</a>
+  </p>
+
+  <footer>© 2026 <a href="../">Ganbaroot</a></footer>
+</main>
+</body>
+</html>
